@@ -1,0 +1,30 @@
+RewriteEngine On
+
+RewriteBase /
+
+#Rules apply only to http://www.hgsrc.co.uk and http://www.hgsrc.co.uk/sub-directories
+
+#RewriteCond %{HTTP_HOST} ^hgsrc\.co\.uk$ [NC]
+#RewriteRule ^(.*)$ http://www.hgsrc.co.uk/$1 [L,R=301]
+
+#Rules for converting .php to /
+
+#RewriteCond %{HTTP_HOST} ^www\.hgsrc\.co\.uk$ [NC]
+#RewriteCond %{QUERY_STRING} !internal=1 [NC]
+#RewriteRule ^(.*)\.php$ $1 [L,R=301]
+
+#Rules for converting / to .php
+
+#RewriteCond %{HTTP_HOST} ^www\.hgsrc\.co\.uk$ [NC]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !\.php$ [NC]
+#RewriteCond %{REQUEST_URI} !^/$
+#RewriteRule ^(.*)$ $1.php?internal=1 [L, QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+#RewriteRule ^([a-z0-9]+)/([a-z0-9\-]+)/([a-z0-9\\-]+)$ /index.php?page=$1/$2/$3 [L]
+#RewriteRule ^([a-z0-9]+)/([a-z0-9\-]+)$ /index.php?page=$1/$2 [L]
+#RewriteRule ^([a-z0-9]+)$ /index.php?page=$1 [L]

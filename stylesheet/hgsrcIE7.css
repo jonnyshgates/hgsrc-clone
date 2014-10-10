@@ -1,0 +1,153 @@
+html { min-height:100%; }
+
+body 
+{
+    background-image:url(../image/bg.png);
+	background: no-repeat 50% 300px, -moz-linear-gradient(top, #ffffff 0%, #e3e3e3 100%);
+	background: no-repeat 50% 300px, -webkit-gradient(linear, 0% 0%,0% 100%, from(#ffffff), to(#e3e3e3));
+	background: no-repeat 50% 300px, -webkit-linear-gradient(top, #ffffff 0%,#e3e3e3 100%);
+	background: no-repeat 50% 300px, -o-linear-gradient(top, #ffffff 0%,#e3e3e3 100%);
+	background: no-repeat 50% 300px, -ms-linear-gradient(top, #ffffff 0%,#e3e3e3 100%);
+	background: no-repeat 50% 300px, linear-gradient(top, #ffffff 0%,#e3e3e3 100%);
+	font-family:Arial,Sans-Serif;
+}
+
+#container { position:relative; width:1020px; margin-left:auto; margin-right:auto; background-color:#ffffff;}
+    
+    #main{ position:relative; float:left; width:1020px; height:auto; margin-left:auto; margin-right:auto; margin-top:20px; margin-bottom:20px; border:1px solid #e3e3e3; background-color:#ffffff;}
+    
+    #logo { position:relative; float:left; width:400px; height:60px; padding:20px; }
+    #navigation{ position:relative; float:left; width:1020px; height:40px; font-weight:bold; background-image:url(../image/navbg1.png); }
+    #editing{ position:relative; float:left; left:760px; width:940px; height:20px; font-weight:bold; padding-top:20px; padding-bottom:10px; }
+    #box-fullwidth{ position:relative; float:left; width:980px; height:auto; min-height:350px; text-align:center; margin-left:20px; margin-top:20px; background-color:#efefef; }
+    #heading-fullwidth{ position:relative; float:left; background-color:#284934; width:980px; height:40px; text-align:center; line-height:40px; }
+    #box-halfwidth{ position:relative; float:left; width:480px; height:auto; text-align:center; margin-left:20px; margin-top:20px; background-color:#efefef; }
+    #heading-halfwidth{ position:relative; float:left; width:480px; height:40px; text-align:center; line-height:40px;}
+        
+/*navigation*/
+
+#navigation ul { text-align:center; display:block; margin:0px; padding-left:80px; padding-right:15px; list-style:none; z-index:999;}
+#navigation li { float:left; display:inline; text-align:left; width:auto; overflow: visible; background-image:url(../image/navbg1.png); }
+#navigation li:hover { background-image:url(../image/navbg1.png); }
+#navigation a { display:block; height:40px; line-height:42px; padding: 0px 10px 0px 10px; font-weight:bold;}
+#navigation li a:hover { background-image:url(../image/navbg2.png);  color:#ffffff; }
+
+/*subnavigation - not possible in IE7 so has to be hidden*/
+
+#navigation li ul { visibility:hidden; }
+
+/*alternative navigation*/
+
+#altnav ul { position:relative; width:auto; list-style:none; text-align:center; margin-top:10px; }
+#altnav li { float:left; width:370px; background-color:#efefef; margin: 0 0 10px 0; }
+#altnav a { display:block; line-height:30px;}
+#altnav li a:hover { background-color:#a3bf40; color:#ffffff; font-weight:normal; }
+
+
+/*editing*/
+
+#editing ul { float:left; margin:0px; list-style:none; }
+#editing li { float:left; width:160px; background-color:#ff6600; }
+#editing a { display:block; line-height:30px; padding-left:10px; padding-right:10px; }
+#editing li a:hover { background-color:#ff4400; }
+
+/*leagues*/
+
+#league ul { float:left; margin:0px; padding-left:10px; list-style:none; }
+#league li { float:left; width:220px; background-color:#a1c037; margin-right:10px; margin-bottom:10px; }
+#league a { display:block; line-height:30px; padding-left:10px; padding-right:10px; }
+#league li a:hover { background-color:#6a8025; }
+
+#league-rb ul { float:left; margin:0px; padding-left:10px; list-style:none; }
+#league-rb li { float:left; width:220px; background-color:#0e76bc; margin-right:10px; margin-bottom:10px; }
+#league-rb a { display:block; line-height:30px; padding-left:10px; padding-right:10px; }
+#league-rb li a:hover { background-color:#2a4971; }
+
+/*fonts*/
+
+.arial24black {  font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #000000}
+.arial24grey {  font-family: Arial, Helvetica, sans-serif; font-size: 24px; color: #999999}
+
+.arial16black {  font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #000000; text-decoration:none;}
+.arial16grey { font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #666666; text-decoration:none;}
+.arial16white {  font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; text-decoration:none;}
+.arial16hg1 {  font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #284934; text-decoration:none;}
+
+.arial14black {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; text-decoration:none;}
+.arial14grey { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #666666; text-decoration:none;}
+.arial14white { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #ffffff; text-decoration:none; font-weight:normal;}
+.arial14dgrey { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #999999; text-decoration:none; font-weight: normal;}
+.arial14hg1 {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #284934; text-decoration:none;}
+.arial14hg2 {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #52aa6c; text-decoration:none;}
+
+.arial12black {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #000000}
+.arial12grey {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; text-decoration:none;}
+.arial12red {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #ff0000; text-decoration:none;}
+.arial12white {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #ffffff}
+.arial12hg1 {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #284934; text-decoration:none;}
+.arial12hg2 {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #52aa6c; text-decoration:none; font-weight: bold; font-variant: normal;}
+
+.arial10black {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #000000}
+.arial10grey {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #666666; text-decoration:none;}
+
+a.hoverWhite:hover { color:#ffffff; }
+a.hoverRed:hover { color:#ff0000; }
+a.hoverGrey:hover { color:#999999; }
+a.hoverHG2:hover {color:#52aa6c; }
+
+h1,h2,h3,h4,h5,h6{ margin: 0px; margin-bottom: 10px; font-weight: bold; }
+p{ margin: 0px; margin-top: 10px; }
+h1 { font-size: 30px; }
+h2 { font-size: 24px; padding-top:10px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 13px; }
+
+img{ border:0px; }
+img.attachment{ padding-bottom:5px; }
+
+/*tables*/
+
+table.services { font-family:Arial,Helvetica,sans-serif; font-size:14px; color:#666666; border-collapse:collapse; width:100%;}
+table.services th { height:26px; border:2px solid #666666; padding:4px; font-size: 16px; color: #ffffff; background-color: #666666; text-align:center;}
+table.services td { height:24px; border:2px solid #666666; padding-left:8px; padding-top:2px; padding-bottom:2px; background-color:#ffffff; text-align:left;}
+
+table.fixtures { font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#666666; margin-left:auto; margin-right:auto; border-collapse:collapse; width:640px;}
+table.fixtures th { height:16px; border:5px solid #bedfc8; font-size:14px; padding:8px; color: #ffffff; background-color:#398271; text-align:center;}
+table.fixtures td { border:5px solid #bedfc8; height:20px; color: #666666; background-color:#ffffff; text-align:center;}
+
+table.rankings { font-family:Arial,Helvetica,sans-serif; font-size:14px; color:#666666; margin-left:auto; margin-right:auto; border-collapse:collapse; width:460px;}
+table.rankings th { height:16px; border:5px solid #bedfc8; padding:8px; color: #ffffff; background-color:#398271; text-align:center;}
+table.rankings td { height:16px; border:5px solid #bedfc8; height:20px; color: #666666; background-color:#ffffff; padding:4px 4px 4px 4px; text-align:center;}
+
+table.league { font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #000000; border-collapse: collapse; width:100%}
+table.league th { height:20px; border:2px solid #666666; padding:4px; font-size: 14px; color: #ffffff; background-color: #666666; text-align:center;}
+table.league td { height:20px; border:2px solid #666666; padding-left:8px; padding-top:2px; padding-bottom:2px; background-color:#ffffff; text-align:center;}
+
+table.fees { font-family: Arial, Helvetica, sans-serif; font-size:14px; border-collapse: collapse; width:100%; line-height:16px; }
+table.fees th { height:20px; border:5px solid #ffffff; padding:8px; color:#ffffff; background-color: #212120; text-align:center;}
+table.fees td { height:20px; border:5px solid #ffffff; padding:8px; color:#000000; background-color:#e9f4ed; text-align:center;}
+
+
+/* slideshow */
+#slideshow { position:absolute; top:16px; float:left; width:1020px; height:276px; background:#fff;} /* bring back from mainstream if necc*/
+#slides { width:1020px; left:-40px; height:276px; list-style:none; overflow:auto}
+#slides li {width:1020px; height:276px}
+
+.pagination {float:left; list-style:none; height:25px;}
+.pagination li {float:left; cursor:pointer; padding:5px 8px; background:#e3e3e3; margin:0 8px 0 0; text-align:center; color:#ffffff; }
+.pagination li:hover {background:#284934; }
+li.current {background:#666666; }
+
+li#content {width:1020px; height:276px; background:#fff}
+#content h1 {font:22px Georgia,Verdana; margin-bottom:15px; color:#036}
+
+/* Login Stuff */
+
+
+
+
+
+
+
